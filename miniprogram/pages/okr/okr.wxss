@@ -1,0 +1,44 @@
+.okr-create{
+  background-color: #333;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 30rpx;
+  color: #E8E8E8;
+}
+.okr-item{
+  position: relative;
+  overflow:hidden; 
+  width: 680rpx;
+  background-color: #cecfc9b2;
+  min-height: 130rpx;
+  margin: 20rpx auto;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  height: auto;
+}
+.okr-item-title{
+  padding-top: 10rpx;
+}
+.okr-item-time{
+  font-size: 12px;
+  color: #333; 
+  padding: 5rpx;
+  line-height: 15px;
+}
+.okr-item.active:after{
+  content: "完成";
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  border: 2px solid #333;
+  line-height: 120rpx;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  -webkit-transform:rotate(100deg);
+  transform:rotate(-50deg);
+  color: #333;
+}

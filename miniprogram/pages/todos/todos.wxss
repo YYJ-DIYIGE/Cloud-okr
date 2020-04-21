@@ -1,0 +1,22 @@
+.todos-title{
+  font-size: 14px;
+  margin-top: 20rpx;
+  color: #333;
+  padding-left: 20rpx;
+}
+.todos-input{
+  border: 1px solid #333;
+  width: 680rpx;
+  height: 80rpx;
+  padding-left: 20rpx;
+  margin: 20rpx auto;
+}
+.todos-item{
+  width: 680rpx;
+  background-color: #cecfc9b2;
+  height: 130rpx;
+  margin: 20rpx auto;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}

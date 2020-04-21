@@ -1,0 +1,21 @@
+<view class="page-container">
+  <view class="okrCreate-section">
+    <view class="okrCreate-list">
+      <view class="okrCreate-item">
+        <view class="okrCreate-item-title">objective 目标：</view>
+        <view class="okrCreate-operation">
+          <input class="okrCreate-input" placeholder="请输入你的目标" value="{{objective}}" bindinput="handleChangeObjective"></input>
+          <view class="okrCreate-btn add" hover-class="okrCreate-btn_hover" bindtap="handleAddKeyresult">+</view>
+        </view>
+      </view>
+      <view class="okrCreate-item" wx:for="{{keyresults}}" wx:key="index" data-index="{{index}}">
+        <view class="okrCreate-item-title">Keyvesut 成果{{index + 1}}：</view>
+        <view class="okrCreate-operation">
+          <input class="okrCreate-input" placeholder="请输入你的成果" value="{{item.title}}" bindinput="handleChangeKeyresult" data-index="{{index}}"></input>
+          <view class="okrCreate-btn delete" hover-class="okrCreate-btn_hover" bindtap="handleDeleteKeyresult" data-index="{{index}}">-</view>
+        </view>
+      </view>
+    </view>
+    <view class="okrCreate-Add-btn" hover-class="okrCreate-btn_hover" bindtap="handleSubmit">新增</view>
+  </view>
+</view>

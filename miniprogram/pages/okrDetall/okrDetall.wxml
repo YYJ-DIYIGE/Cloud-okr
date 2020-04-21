@@ -1,0 +1,24 @@
+<view class="page-container">
+  <view class="okrCreate-section">
+      <view class="okrCreate-obj {{item.status == 1? 'active' : ''}}" wx:for="{{okrArr}}" wx:key="unpique" data-state="{{item.status}}" >
+        <view class="okrCreate-obj-title">{{item.title}}</view>
+        <view class="okrCreate-obj-time">· 创建时间：{{item.create_time}}</view>
+        <view class="okrCreate-obj-time" wx:if="{{item.status == 1}}">· 完成时间：{{item.finish_time}}</view>
+      </view>
+      <view class="okrCreate-keyresult-list">
+        <view class="okrCreate-keyresult-item {{item.status == 1? 'active' : ''}}" 
+        wx:for="{{krdata}}" 
+        wx:key="unpique" 
+        data-id="{{item._id}}" 
+        bindtap="operation" 
+        data-status="{{item.status}}">
+          <view class="okrCreate-item-title {{item.status == 1 ? 'active' : ''}}">{{item.title}}<view class="sign">{{item.status == 1? '完成' : '点击标记'}}</view></view>
+          <view class="okrCreate-item-todo {{item.status == 1 ? 'active' : ''}}" 
+          wx:for="{{item.todos}}"  
+          wx:for-item="todo" 
+          wx:key="unpique" 
+          data-id="{{todo._id}}">--{{todo.title}}</view>
+        </view>
+      </view>
+  </view>
+</view>

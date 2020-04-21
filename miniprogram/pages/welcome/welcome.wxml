@@ -1,0 +1,16 @@
+<view class="page-container">
+  <view class="power-section">
+    <view class="power-container">
+      <view class="power-title">目标和关键成果</view>
+      <view class="power-sub-title">Objectlve and Key Result</view>
+      <view class="power-list">
+        <view class="power-item">目标：我想让网站打开速度快一点</view>
+        <view class="power-item">--成果：打开速度30%</view>
+        <view class="power-item">----todo：替换提及较大的函数库</view>
+        <view class="power-item">----todo：javaScript 代码压缩</view>
+        <view class="power-item">----todo：图片资源压纯和代理</view>
+      </view>
+    </view>
+  </view>
+  <button  class="power-btn" open-type="getUserInfo" bindgetuserinfo="login">立即体验</button >
+</view>

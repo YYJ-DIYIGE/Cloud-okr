@@ -1,0 +1,45 @@
+.okrCreate-section{
+  height: 100%;
+  position: relative;
+}
+.okrCreate-list{
+  margin-top: 30rpx;
+  min-height: 980rpx;
+  height: auto;
+}
+.okrCreate-item{
+ margin: 20rpx 30rpx;
+}
+.okrCreate-item-title{
+  font-size: 14px;
+}
+.okrCreate-operation{
+  display: flex;
+}
+.okrCreate-input{
+  border: 1px solid #333;
+  width: 570rpx;
+  height: 80rpx;
+  padding-left: 10rpx;
+}
+.okrCreate-btn{
+  width: 80rpx;
+  height: 86rpx;
+  background-color: #686565;
+  font-size: 20px;
+  color: aliceblue;
+  line-height: 86rpx;
+  text-align: center;
+  margin-left: 30rpx;
+}
+.okrCreate-Add-btn{
+  height: 80rpx;
+  background-color: #686565;
+  margin: 0 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: aliceblue;
+}
+.okrCreate-btn_hover{
+  background-color: #b69e9e;
+}

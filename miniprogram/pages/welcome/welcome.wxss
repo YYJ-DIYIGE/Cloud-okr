@@ -1,0 +1,49 @@
+.page-container{
+  height: 100%;
+ position: relative;
+}
+.power-section{
+  margin-top: 30rpx;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom right, #333 ,#f5f5f5);
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 70%;
+}
+.power-container{
+  width: 600rpx;
+  padding-top: 50rpx;
+  margin: 0 auto;
+  height: 800rpx;
+}
+.power-title{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 2px;
+}
+.power-sub-title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 10rpx;
+}
+.power-list{
+  margin-top: 100rpx;
+}
+.power-item{
+  font-size: 12px;
+  line-height: 50rpx;
+}
+.power-btn{
+  display: block;
+  width: 600rpx;
+  height: 80rpx;
+  text-align: center;
+  /* line-height: 80rpx; */
+  margin: 100rpx auto;
+  background-color: #333;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #f5f5f5 , #333);
+}

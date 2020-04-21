@@ -1,0 +1,21 @@
+<view class="page-container">
+  <view class="todos-title">你必须做你不得不做的事</view>
+  <view class="todos-form">
+    <input class="todos-input" placeholder="请输入你需要完成的事情"
+    value="{{value}}"
+  bindinput="handleChange"  placeholder-class="todos-input_placeholder" bindblur="addtodos" />
+  </view>
+  <view class="todos-list">
+    {{todo[0] ? "" : "暂无数据，快去创建你的todos吧"}}
+    <view class="todos-item" 
+    bindtap="operation" 
+    wx:key="unique" 
+    wx:for="{{todo}}"  
+    data-id="{{item._id}}"
+    data-status="{{item.status}}"
+    data-index="{{index}}">
+      <view >{{item.title}}</view>
+      <view >· 时间：{{item.created_time}}</view>
+    </view>
+  </view>
+</view>
